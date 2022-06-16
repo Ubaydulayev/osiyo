@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer_box">
             <div className="row">
-              <div className="col-lg-3">
+              <div className="col-lg-3 col-md-6">
                 <div className="logo">
                   <img
                     src="https://imperialgranite.uz/wp-content/themes/imperial/assets/img/footer/mainl.png"
@@ -16,13 +16,13 @@ const Footer = () => {
                   />
                 </div>
               </div>
-              <div className="col-lg-3">
+              <div className="col-lg-3 col-md-6">
                 <div className="adres">
                   <h5>Адрес</h5>
                   <p>110807, Янгиюль, Эски Ковунчи КФЙ, Кирсадок МФЙ</p>
                 </div>
               </div>
-              <div className="col-lg-3">
+              <div className="col-lg-3 col-md-6">
                 <div className="contact">
                   <h5>Контакты</h5>
                   <p>+998 99 840 01 77</p>
@@ -30,7 +30,7 @@ const Footer = () => {
                   <p>+998 99 818 30 64</p>
                 </div>
               </div>
-              <div className="col-lg-3">
+              <div className="col-lg-3 col-md-6">
                 <div className="sochial ">
                   <h5>Соц. сети</h5>
                   <img

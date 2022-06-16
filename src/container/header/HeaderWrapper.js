@@ -12,16 +12,31 @@ const HeaderWrapper = styled.div`
     width: 100px;
   }
   ul {
-    padding: 0 !important;
+    padding: 0 !important; 
     margin: 0 !important;
     list-style-type: none;
   }
-  a:hover{
+  a:hover {
     cursor: pointer;
     text-decoration: underline;
   }
-
-  
+  .fas {
+    button {
+      background: none;
+      border: none;
+    }
+  }
+  .mobile {
+    ul {
+      li {
+        margin: 18px;
+        text-align: center;
+        a {
+          margin: 0;
+        }
+      }
+    }
+  }
 `;
 
 export default HeaderWrapper;
