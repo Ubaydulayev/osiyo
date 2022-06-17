@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer_box">
             <div className="row">
-              <div className="col-lg-3 col-md-6 col-1">
+              <div className="col-lg-3 col-md-6 col-12">
                 <h3>LOCAL BUSINESS</h3>
                 <hr />
                 <p>
@@ -19,7 +19,7 @@ const Footer = () => {
                   Nunc semper urna at velit efficitur, sit amet.
                 </p>
               </div>
-              <div className="col-lg-3 col-md-6 col-1">
+              <div className="col-lg-3 col-md-6 col-12">
                 <div className="adres">
                   <h3>ADRES</h3>
                   <hr />
@@ -30,7 +30,7 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 col-1">
+              <div className="col-lg-3 col-md-6 col-12">
                 <div className="contact">
                   <h3>CONTACT US</h3>
                   <hr />
@@ -44,7 +44,7 @@ const Footer = () => {
                   <p>Website: https://osiyo.granite.uz</p>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 col-1">
+              <div className="col-lg-3 col-md-6 col-12">
                 <div className="sochial ">
                   <h3>FOLLOW US ON SOCIAL NETWORKS</h3>
                   <hr />

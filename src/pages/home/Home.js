@@ -1,9 +1,15 @@
-import React from "react";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Container from "../../containers/Container";
 import HomeWrapper from "./HomeWrapper";
 
 const Home = () => {
+  // const [bars, setbars] = useState(false);
+  // const toggle = () => {
+  //   setbars(!bars);
+  // };
   return (
     <Container>
       <HomeWrapper>
@@ -17,7 +23,7 @@ const Home = () => {
 
             <div className="topMenu">
               <div className="menus">
-                <ul className="d-none d-md-none d-lg-flex">
+                <ul className="d-lg-flex d-md-none d-none">
                   <li className="active">
                     <Link to={"/"}>HOME</Link>
                   </li>
@@ -35,6 +41,11 @@ const Home = () => {
                   </li>
                 </ul>
               </div>
+              <div className="bars d-lg-none d-md-block d-block">
+                <button className="btn text-white">
+                  <FontAwesomeIcon icon={faBars} />
+                </button>
+              </div>
             </div>
           </div>
           <div className="content">
@@ -46,10 +57,10 @@ const Home = () => {
         </section>
         <section className="contents">
           <div className="content1">
-            <div className="info">
+            <div className="info container">
               <h2>WHAT WE DO OUT OF STONE</h2>
               <div className="row">
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6 col-12">
                   <div className="more">
                     <img
                       src="https://sktperfectdemo.com/demos/stone/wp-content/uploads/2019/11/whatwedo1.jpg"
@@ -63,7 +74,7 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6 col-12">
                   <div className="more">
                     <img
                       src="https://sktperfectdemo.com/demos/stone/wp-content/uploads/2019/11/whatwedo2.jpg"
@@ -77,7 +88,7 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6 col-12">
                   <div className="more">
                     <img
                       src="https://sktperfectdemo.com/demos/stone/wp-content/uploads/2019/11/whatwedo3.jpg"
@@ -96,7 +107,7 @@ const Home = () => {
           </div>
           <div className="content2 container">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-md-12 col-12">
                 <div className="granite">
                   <img
                     src="https://sktperfectdemo.com/demos/stone/wp-content/uploads/2019/11/welcome-to-stone.png"
@@ -104,7 +115,7 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-md-12 col-12">
                 <div className="info">
                   <h2>Welcome to SKT STONE</h2>
                   <hr />
@@ -132,32 +143,32 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="content3 ">
+          <div className="content3 container">
             <div className="info">
               <h2>OUR GALLERY</h2>
               <div className="row">
-                <div className="col-lg-3 col-md-3">
+                <div className="col-lg-3 col-md-6 col-12">
                   <img
                     src="https://sktperfectdemo.com/demos/stone/wp-content/uploads/2017/11/kitchen-1336160_1280.jpg"
                     alt=""
                   />
                   <h4>TITLE HERE</h4>
                 </div>
-                <div className="col-lg-3 col-md-3">
+                <div className="col-lg-3 col-md-6 col-12">
                   <img
                     src="https://sktperfectdemo.com/demos/stone/wp-content/uploads/2017/11/blog3.jpg"
                     alt=""
                   />
                   <h4>TITLE HERE</h4>
                 </div>
-                <div className="col-lg-3 col-md-3">
+                <div className="col-lg-3 col-md-6 col-12">
                   <img
                     src="https://sktperfectdemo.com/demos/stone/wp-content/uploads/2017/11/cube-2803223_1280.jpg"
                     alt=""
                   />
                   <h4>TITLE HERE</h4>
                 </div>
-                <div className="col-lg-3 col-md-3">
+                <div className="col-lg-3 col-md-6 col-12">
                   <img
                     src="https://sktperfectdemo.com/demos/stone/wp-content/uploads/2016/11/gallery3.jpg"
                     alt=""
@@ -165,28 +176,28 @@ const Home = () => {
                   <h4>TITLE HERE</h4>
                 </div>
                 {/* 2 */}
-                <div className="col-lg-3 col-md-3">
+                <div className="col-lg-3 col-md-6 col-12">
                   <img
                     src="https://sktperfectdemo.com/demos/stone/wp-content/uploads/2017/11/marble-2362262_1280.jpg"
                     alt=""
                   />
                   <h4>TITLE HERE</h4>
                 </div>
-                <div className="col-lg-3 col-md-3">
+                <div className="col-lg-3 col-md-6 col-12">
                   <img
                     src="https://sktperfectdemo.com/demos/stone/wp-content/uploads/2017/11/stones-2644164_1920.jpg"
                     alt=""
                   />
                   <h4>TITLE HERE</h4>
                 </div>
-                <div className="col-lg-3 col-md-3">
+                <div className="col-lg-3 col-md-6 col-12">
                   <img
                     src="https://sktperfectdemo.com/demos/stone/wp-content/uploads/2017/11/wall-2133483_1920.jpg"
                     alt=""
                   />
                   <h4>TITLE HERE</h4>
                 </div>
-                <div className="col-lg-3 col-md-3">
+                <div className="col-lg-3 col-md-6 col-12">
                   <img
                     src="https://sktperfectdemo.com/demos/stone/wp-content/uploads/2017/11/table-decoration-2756199_1920.jpg"
                     alt=""
@@ -194,6 +205,20 @@ const Home = () => {
                   <h4>TITLE HERE</h4>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="content4">
+            <div className="info">
+              <div className="titles">
+                <h2>NEW BATHROOM</h2>
+                <h4>COLLECTION</h4>
+                <h6>{`VIEW LOOK BOOK > `}</h6>
+              </div>
+            </div>
+          </div>
+          <div className="content5">
+            <div className="info">
+
             </div>
           </div>
           <div className="content6">

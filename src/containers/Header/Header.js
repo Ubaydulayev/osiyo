@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import HeaderWrapper from "./HeaderWrapper";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   // const [bars, setbars] = useState(false);
@@ -36,6 +38,11 @@ const Header = () => {
                 <Link to={"/contact"}>CONTACT</Link>
               </li>
             </ul>
+          </div>
+          <div className="bars d-lg-none d-md-block d-block">
+            <button className="btn text-white">
+              <FontAwesomeIcon icon={faBars} />
+            </button>
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ const About = () => {
       <AboutWrapper>
         <div className="content container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-md-12 col-12">
               <div className="granite">
                 <img
                   src="https://sktperfectdemo.com/demos/stone/wp-content/uploads/2019/11/welcome-to-stone.png"
@@ -18,7 +18,7 @@ const About = () => {
                 />
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-md-12 col-12">
               <div className="info">
                 <h2>Welcome to SKT STONE</h2>
                 <hr />
