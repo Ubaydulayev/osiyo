@@ -825,7 +825,7 @@ const HomeWrapper = styled.div`
           color: #ffffff;
           position: absolute;
           background: rgba(0, 0, 0, 0.3);
-          top: 65%;
+          top: 75%;
           left: 35%;
           line-height: normal;
           font-weight: 600;
