@@ -818,7 +818,7 @@ const HomeWrapper = styled.div`
           font-size: 40px;
           color: #ffffff;
           position: absolute;
-          top: 30%;
+          top: 20%;
           right: 20%;
         }
         .btn {
