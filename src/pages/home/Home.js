@@ -67,7 +67,6 @@ const Home = () => {
           <div className="content">
             <div className="title">
               <h1>WE MAKE THINGS OUT OF STONES</h1>
-              <button className="btn">READ MORE</button>
             </div>
           </div>
         </section>
