@@ -818,14 +818,14 @@ const HomeWrapper = styled.div`
           font-size: 40px;
           color: #ffffff;
           position: absolute;
-          top: 20%;
+          top: 30%;
           right: 20%;
         }
         .btn {
           color: #ffffff;
           position: absolute;
           background: rgba(0, 0, 0, 0.3);
-          top: 55%;
+          top: 65%;
           left: 35%;
           line-height: normal;
           font-weight: 600;
