@@ -5,10 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
-  // const [bars, setbars] = useState(false);
-  // const toggle = () => {
-  //   setbars(!bars);
-  // };
+  const [bars, setbars] = useState(false);
+  const toggle = () => setbars(!bars);
 
   return (
     <HeaderWrapper>
@@ -22,7 +20,7 @@ const Header = () => {
         <div className="topMenu">
           <div className="menus">
             <ul className="d-none d-md-none d-lg-flex">
-              <li className="active">
+              <li>
                 <Link to={"/"}>HOME</Link>
               </li>
               <li>
@@ -40,13 +38,32 @@ const Header = () => {
             </ul>
           </div>
           <div className="bars d-lg-none d-md-block d-block">
-            <button className="btn text-white">
+            <button className="btn text-white" onClick={toggle}>
               <FontAwesomeIcon icon={faBars} />
             </button>
+            <div className={`nav-menu ${bars ? "w-100" : "d-none"}`}>
+              <ul>
+                <li>
+                  <Link to={"/"}>HOME</Link>
+                </li>
+                <li>
+                  <Link to={"/about"}>ABOUT</Link>
+                </li>
+                <li>
+                  <Link to={"/services"}>SERVICES</Link>
+                </li>
+                <li>
+                  <Link to={"/gallery"}>GALLERY</Link>
+                </li>
+                <li>
+                  <Link to={"/contact"}>CONTACT</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div className="head">.</div>
+      <div className="head" />
     </HeaderWrapper>
   );
 };
