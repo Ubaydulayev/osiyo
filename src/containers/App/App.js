@@ -5,6 +5,7 @@ import Contact from "../../components/Contact";
 import Home from "../../pages/home/Home";
 import Gallery from "../../components/Gallery";
 import Services from "../../components/Services";
+import LogIn from "../../pages/LogIn";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/login" element={<LogIn />} />
       </Routes>
     </div>
   );

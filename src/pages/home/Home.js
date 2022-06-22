@@ -38,6 +38,9 @@ const Home = () => {
                   <li>
                     <Link to={"/contact"}>CONTACT</Link>
                   </li>
+                  <li>
+                    <Link to={"/login"}>LOG IN</Link>
+                  </li>
                 </ul>
               </div>
               <div className="bars d-lg-none d-md-block d-block">
@@ -59,6 +62,9 @@ const Home = () => {
                   </li>
                   <li>
                     <Link to={"/contact"}>CONTACT</Link>
+                  </li>
+                  <li>
+                    <Link to={"/login"}>LOG IN</Link>
                   </li>
                 </ul>
               </div>
