@@ -133,7 +133,7 @@ const LogInWrapper = styled.div`
         background-color: white;
         position: absolute;
         top: 14%;
-        left: 19%;
+        left: 12%;
       }
     }
   }
