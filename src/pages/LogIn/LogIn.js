@@ -32,7 +32,6 @@ const LogIn = () => {
               <label for="exampleFormControlInput1" class="form-label">
                 <p className="m-0 p-0">PASSWORD</p>
               </label>
-              <a href="#"></a>
               <input
                 type="password"
                 class="form-control"
