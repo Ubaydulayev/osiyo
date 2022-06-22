@@ -42,7 +42,7 @@ const LogIn = () => {
           </div>
           <button className="btn">Log In</button>
           <p>
-            Don't have on account? <a href="#">Sign up</a>
+            Don't have on account? <a href="/">Sign up</a>
           </p>
         </div>
       </div>
