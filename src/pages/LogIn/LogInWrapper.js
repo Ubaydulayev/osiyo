@@ -121,7 +121,23 @@ const LogInWrapper = styled.div`
       }
     }
   }
-  @media (max-width: 415px) {
+  @media (max-width: 590px) {
+    height: 100vh;
+    .content {
+      .info {
+        padding: 10px 30px;
+        border-radius: 10px;
+        text-align: center;
+        width: 323px;
+        height: 558px;
+        background-color: white;
+        position: absolute;
+        top: 14%;
+        left: 19%;
+      }
+    }
+  }
+  @media (max-width: 414px) {
     height: 100vh;
     .content {
       .info {
