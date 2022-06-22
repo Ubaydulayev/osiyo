@@ -121,7 +121,7 @@ const LogInWrapper = styled.div`
       }
     }
   }
-  @media (max-width: 390px) {
+  @media (max-width: 415px) {
     height: 100vh;
     .content {
       .info {
