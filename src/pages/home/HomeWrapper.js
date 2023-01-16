@@ -863,9 +863,9 @@ const HomeWrapper = styled.div`
       .more {
         img {
           margin-top: 40px;
-          max-width: 240px;
+          max-width: 320px;
           border-radius: 10px;
-          margin-left: 70px;
+          margin-left: 40px;
         }
       }
     }

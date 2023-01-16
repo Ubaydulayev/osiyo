@@ -89,7 +89,7 @@ const ServicesWrapper = styled.div`
           margin-top: 40px;
           max-width: 320px;
           border-radius: 10px;
-          margin-left: 20px;
+          margin-left: 40px;
         }
       }
     }
