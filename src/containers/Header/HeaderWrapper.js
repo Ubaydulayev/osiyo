@@ -24,9 +24,11 @@ const HeaderWrapper = styled.div`
   a:hover {
     cursor: pointer;
     color: white;
+    transition: all 0.6s ease;
   }
   li:hover {
     background-color: #350f12;
+    transition: all 0.6s ease;
   }
   .fas {
     button {

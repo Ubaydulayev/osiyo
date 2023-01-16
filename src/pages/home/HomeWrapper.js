@@ -100,6 +100,7 @@ const HomeWrapper = styled.div`
       img {
         margin-top: 40px;
         border-radius: 10px;
+        margin-left: 20px;
       }
       h4 {
         margin: 30px 0px;
@@ -120,6 +121,9 @@ const HomeWrapper = styled.div`
       width: 60px;
       color: rgba(0, 0, 0);
       height: 2px;
+    }
+    img {
+      width: 100%;
     }
     .info {
       h2 {
@@ -471,6 +475,13 @@ const HomeWrapper = styled.div`
     }
   }
   @media (max-width: 1260px) {
+    .content1 {
+      .more {
+        img {
+          max-width: 290px;
+        }
+      }
+    }
     .content {
       background-size: cover;
       background-repeat: no-repeat;
@@ -546,6 +557,15 @@ const HomeWrapper = styled.div`
       }
     }
   }
+  @media(max-width: 1200) {
+    
+      .granite {
+        img {
+          max-width: 360px;
+        }
+      }
+    
+  }
   @media (max-width: 765px) {
     .content1 {
       padding-top: 150px;
@@ -562,6 +582,8 @@ const HomeWrapper = styled.div`
         img {
           margin-top: 40px;
           border-radius: 10px !important;
+          max-width: 100%;
+          margin-left: 60px;
         }
         h4 {
           margin: 30px 0px;
@@ -632,7 +654,9 @@ const HomeWrapper = styled.div`
       .more {
         img {
           margin-top: 40px;
-          margin-left: 10px;
+          max-width: 350px;
+          border-radius: 10px;
+          margin-left: 70px;
         }
         h4 {
           margin: 30px 0px;
@@ -656,7 +680,7 @@ const HomeWrapper = styled.div`
       }
       .granite {
         img {
-          width: 100%;
+          width: 360px;
         }
       }
       .info {
@@ -720,7 +744,21 @@ const HomeWrapper = styled.div`
         }
       }
     }
-
+    .content5 {
+      padding: 70px 30px;
+      .info {
+        .row {
+          img {
+            min-height: 310px;
+            height: auto;
+            box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            max-width: 310px;
+          }
+        }
+      }
+    }
     .content {
       background-size: cover;
       background-repeat: no-repeat;
@@ -753,6 +791,9 @@ const HomeWrapper = styled.div`
           border-radius: 0px;
         }
       }
+    }
+    .content7 {
+      padding: 70px 30px;
     }
     .header {
       background: rgba(0, 0, 0, 0.3);
@@ -801,7 +842,29 @@ const HomeWrapper = styled.div`
     }
   }
 
+  @media (max-width: 500px) {
+    .content1 {
+      .more {
+        img {
+          margin-top: 40px;
+          max-width: 240px;
+          border-radius: 10px;
+          margin-left: 70px;
+        }
+      }
+    }
+  }
   @media (max-width: 390px) {
+    .content1 {
+      .more {
+        img {
+          margin-top: 40px;
+          max-width: 250px;
+          border-radius: 10px;
+          margin-left: 10px;
+        }
+      }
+    }
     .content {
       background-size: cover;
       background-repeat: no-repeat;

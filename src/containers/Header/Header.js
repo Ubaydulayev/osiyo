@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import HeaderWrapper from "./HeaderWrapper";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [bars, setbars] = useState(false);
@@ -13,7 +13,7 @@ const Header = () => {
       <div className="container p-0 header d-flex align-items-center justify-content-between">
         <div className="logo">
           <Link to={"/"}>
-            <h2>ASIA Granite</h2>
+            <h2>ASIA Granite Uzbekistan</h2>
           </Link>
         </div>
 

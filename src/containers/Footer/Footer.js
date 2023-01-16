@@ -39,7 +39,7 @@ const Footer = () => {
                     risus tristique utmattis nulla.
                   </p>
                   <br />
-                  <p>Phone: +998 99 840 01 77</p>
+                  <p>Phone: +998 88 257 06 33</p>
                   <p>Email: elmurodturdiev@gmail.com</p>
                   <p>Website: https://osiyo.granite.uz</p>
                 </div>

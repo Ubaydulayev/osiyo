@@ -16,7 +16,7 @@ const Home = () => {
           <div className="container p-0 header d-flex align-items-center justify-content-between">
             <div className="logo">
               <Link to={"/"}>
-                <h2>ASIA Granite</h2>
+                <h2>ASIA Granite Uzbekistan</h2>
               </Link>
             </div>
 
@@ -409,10 +409,10 @@ const Home = () => {
                       <h4 className="textDec1">£500.00</h4>
                       <h4 className="textDec2">£500.00</h4>
                     </div>
-                    <div className="buy">
+                    {/* <div className="buy">
                       <div className="btn br1">BUY NOW!</div>
                       <div className="btn">ADD TO CART</div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="col-lg-3 col-md-6">
                     <img
@@ -425,10 +425,10 @@ const Home = () => {
                       <h4 className="d-none textDec1">£500.00</h4>
                       <h4 className="textDec2">£700.00</h4>
                     </div>
-                    <div className="buy">
+                    {/* <div className="buy">
                       <div className="btn br1">BUY NOW!</div>
                       <div className="btn">ADD TO CART</div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="col-lg-3 col-md-6">
                     <img
@@ -441,10 +441,10 @@ const Home = () => {
                       <h4 className="textDec1">£500.00</h4>
                       <h4 className="textDec2">£500.00</h4>
                     </div>
-                    <div className="buy">
+                    {/* <div className="buy">
                       <div className="btn br1">BUY NOW!</div>
                       <div className="btn">ADD TO CART</div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="col-lg-3 col-md-6">
                     <img
@@ -457,10 +457,10 @@ const Home = () => {
                       <h4 className="textDec1">£500.00</h4>
                       <h4 className="textDec2">£500.00</h4>
                     </div>
-                    <div className="buy">
+                    {/* <div className="buy">
                       <div className="btn br1">BUY NOW!</div>
                       <div className="btn">ADD TO CART</div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -477,10 +477,10 @@ const Home = () => {
                       <h4 className="textDec1">£500.00</h4>
                       <h4 className="textDec2">£500.00</h4>
                     </div>
-                    <div className="buy">
+                    {/* <div className="buy">
                       <div className="btn br1">BUY NOW!</div>
                       <div className="btn">ADD TO CART</div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="col-lg-3 col-md-6">
                     <img
@@ -493,10 +493,10 @@ const Home = () => {
                       <h4 className="d-none textDec1">£500.00</h4>
                       <h4 className="textDec2">£700.00</h4>
                     </div>
-                    <div className="buy">
+                    {/* <div className="buy">
                       <div className="btn br1">BUY NOW!</div>
                       <div className="btn">ADD TO CART</div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="col-lg-3 col-md-6">
                     <img
@@ -509,10 +509,10 @@ const Home = () => {
                       <h4 className="textDec1">£500.00</h4>
                       <h4 className="textDec2">£500.00</h4>
                     </div>
-                    <div className="buy">
+                    {/* <div className="buy">
                       <div className="btn br1">BUY NOW!</div>
                       <div className="btn">ADD TO CART</div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="col-lg-3 col-md-6">
                     <img
@@ -525,10 +525,10 @@ const Home = () => {
                       <h4 className="textDec1">£500.00</h4>
                       <h4 className="textDec2">£500.00</h4>
                     </div>
-                    <div className="buy">
+                    {/* <div className="buy">
                       <div className="btn br1">BUY NOW!</div>
                       <div className="btn">ADD TO CART</div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
