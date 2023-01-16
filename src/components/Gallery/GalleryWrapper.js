@@ -26,7 +26,7 @@ const GalleryWrapper = styled.div`
           margin: 0 auto;
           text-align: center;
           text-transform: uppercase;
-          background: rgba(145, 114, 100, 0.5);
+          background: #2b0609;
           padding: 10px 5px;
           font-size: 18px;
           font-weight: 700;

@@ -20,7 +20,7 @@ const Contact = () => {
               <hr />
               <p>Donec ultricies mattis nulla Australia</p>
               <p>Phone: +998 88 257 06 33</p>
-              <p>Email: elmurodturdiev@gmail.com</p>
+              <p>Email: elmurodturdiev8@gmail.com</p>
               <p>Website: https://osiyo.granite.uz</p>
               <p className="gr"><a>ASIA Granite Uzbekistan</a></p>
             </div>

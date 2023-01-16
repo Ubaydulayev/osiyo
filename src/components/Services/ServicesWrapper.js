@@ -67,7 +67,7 @@ const ServicesWrapper = styled.div`
           margin-top: 40px;
           max-width: 350px;
           border-radius: 10px;
-          margin-left: 70px;
+          margin-left: 50px;
         }
         h4 {
           margin: 30px 0px;
@@ -89,7 +89,7 @@ const ServicesWrapper = styled.div`
           margin-top: 40px;
           max-width: 320px;
           border-radius: 10px;
-          margin-left: 70px;
+          margin-left: 20px;
         }
       }
     }

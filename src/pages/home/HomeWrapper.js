@@ -169,7 +169,7 @@ const HomeWrapper = styled.div`
           margin: 0 auto;
           text-align: center;
           text-transform: uppercase;
-          background: rgba(145, 114, 100, 0.5);
+          background: #2b0609;
           padding: 10px 5px;
           font-size: 18px;
           font-weight: 700;
@@ -474,6 +474,21 @@ const HomeWrapper = styled.div`
       }
     }
   }
+  .content9 {
+    h2 {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        color: #373737;
+        font-family: "Roboto Condensed", Sans-serif;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 700;
+      }
+      .karta {
+        height: 400px;
+      }
+  }
+  
   @media (max-width: 1260px) {
     .content1 {
       .more {
@@ -557,6 +572,7 @@ const HomeWrapper = styled.div`
       }
     }
   }
+  
   @media(max-width: 1200) {
     
       .granite {

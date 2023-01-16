@@ -40,7 +40,7 @@ const Footer = () => {
                   </p>
                   <br />
                   <p>Phone: +998 88 257 06 33</p>
-                  <p>Email: elmurodturdiev@gmail.com</p>
+                  <p>Email: elmurodturdiev8@gmail.com</p>
                   <p>Website: https://osiyo.granite.uz</p>
                 </div>
               </div>
@@ -48,18 +48,22 @@ const Footer = () => {
                 <div className="sochial ">
                   <h3>FOLLOW US ON SOCIAL NETWORKS</h3>
                   <hr />
-                  <img
+                  <a href="/">
+                    <img
                     src="https://imperialgranite.uz/wp-content/themes/imperial/assets/img/footer/facebook.png"
                     alt="facebook"
                   />
-                  <img
-                    src="https://imperialgranite.uz/wp-content/themes/imperial/assets/img/footer/inst.png"
-                    alt="insta"
-                  />
-                  <img
+                  </a>
+                  <a href="https://www.instagram.com/daston.18/">
+                    <img
+                      src="https://imperialgranite.uz/wp-content/themes/imperial/assets/img/footer/inst.png"
+                      alt="insta"
+                    />
+                  </a>
+                  <a href="https://t.me/end_kik"><img
                     src="https://imperialgranite.uz/wp-content/themes/imperial/assets/img/footer/telegram.png"
                     alt="tg"
-                  />
+                  /></a>
                 </div>
               </div>
             </div>
