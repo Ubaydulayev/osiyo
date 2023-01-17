@@ -1,207 +1,171 @@
 import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
-  .head {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background: url("https://sktperfectdemo.com/demos/stone/wp-content/themes/skt-stone/images/default-header-img.jpg");
-    width: 100%;
-    height: 290px;
-  }
-
-  a {
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-  }
-  ul {
-    padding: 0 !important;
-    margin: 0 !important;
-    list-style-type: none;
-  }
-  a:hover {
-    cursor: pointer;
-    color: white;
-    transition: all 0.6s ease;
-  }
-  li:hover {
-    background-color: #350f12;
-    transition: all 0.6s ease;
-  }
-  .fas {
-    button {
-      background: none;
-      border: none;
+  position: fixed;
+  background-color: white;
+  background: url("https://sktperfectdemo.com/demos/stone/wp-content/themes/skt-stone/images/default-header-img.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80px;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  margin-bottom: 100px;
+  .logo {
+    a {
+      text-decoration: none;
+      color: white;
     }
+  }
+  .desctop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    ul {
+      margin-left: -160px;
+      display: flex;
+      align-items: center;
+      list-style: none;
+      li {
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+        a {
+          position: relative;
+          font-size: 16px;
+          transition: 0.6s;
+          line-height: 24px;
+          color: white;
+          text-decoration: none;
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            transition: all 0.3s linear;
+            transition: 0.6s;
+          }
+          &:hover {
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            transition: 0.6s;
+            background-color: rgba(0, 0, 0, 0.3);
+            &::before {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .box {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    img {
+      opacity: 0.5;
+    }
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    &:hover {
+      border-color: black;
+      background-color: white;
+      img {
+        opacity: 1;
+      }
+      color: black;
+    }
+  }
+  .burger {
+    display: none;
   }
   .mobile {
-    ul {
-      li {
-        margin: 18px;
-        text-align: center;
-        a {
-          margin: 0;
-        }
-      }
-    }
+    display: none;
   }
-  .header {
-    background: rgba(0, 0, 0, 0.3);
-
-    position: absolute;
-    top: 5%;
-    left: 10%;
-
-    .logo {
-      h2 {
-        padding: 22px 24px;
-        margin: 0;
-        border: 1px solid white;
-      }
-      img {
-        padding: 32px 25px;
-      }
-    }
-    .topMenu {
-      /* background-color: rgba(255, 255, 255, 0.2); */
+  .left {
+    transform: translateX(-100%);
+  }
+  @media (max-width: 1000) {
+    .desctop {
       ul {
+        margin-left: 0;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .desctop {
+      padding: 24px 0;
+      ul {
+        display: none;
+      }
+    }
+    .box {
+      border: none;
+      background-color: white;
+      color: black;
+    }
+    .logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        font-size: 10px;
+        color: black;
+      }
+    }
+    .burger {
+      display: flex;
+      border: none;
+      img {
+        opacity: 1;
+      }
+    }
+    .mobile {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      max-width: 450px;
+      width: 100%;
+      overflow: auto;
+      min-height: 600px;
+      height: 100vh;
+      padding: 50px;
+      background-color: white;
+      ul {
+        list-style: none;
         li {
-          padding: 29px 24px;
-        }
-        .active {
-          background-color: #350f12;
-        }
-      }
-    }
-  }
-  @media (max-width: 590px) {
-    .content {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-image: url("https://sktperfectdemo.com/demos/stone/wp-content/themes/skt-stone/images/slides/slider1.jpg");
-      width: 100%;
-      .title {
-        h1 {
-          background: rgba(0, 0, 0, 0.3);
-
-          font-weight: 900;
-          line-height: normal;
-          font-family: "Roboto Condensed";
-          font-size: 40px;
-          color: #ffffff;
-          position: absolute;
-          top: 30%;
-          right: 20%;
-        }
-        .btn {
-          color: #ffffff;
-          position: absolute;
-          background: rgba(0, 0, 0, 0.3);
-          top: 55%;
-          left: 35%;
-          line-height: normal;
-          font-weight: 600;
-          padding: 12px 30px;
-          border: 1px solid white;
-          border-radius: 0px;
-        }
-      }
-    }
-    .header {
-      background: rgba(0, 0, 0, 0.3);
-
-      position: absolute;
-      top: 5%;
-      left: 0;
-      .logo {
-        h2 {
-          padding: 22px 24px;
-          margin: 0;
-          border: 1px solid white;
-        }
-        img {
-          padding: 32px 25px;
-        }
-      }
-      .topMenu {
-        /* background-color: rgba(255, 255, 255, 0.2); */
-        ul {
-          li {
-            padding: 29px 24px;
-          }
-          .active {
-            background-color: #350f12;
+          margin-top: 40px;
+          padding: 12px 0;
+          border-bottom: 1px solid #666666;
+          transition: 0.6s;
+          a {
+            font-size: 20px;
+            line-height: 24px;
+            color: black;
+            text-decoration: none;
           }
         }
-      }
-    }
-  }
-  @media (max-width: 390px) {
-    .content {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-image: url("https://sktperfectdemo.com/demos/stone/wp-content/themes/skt-stone/images/slides/slider1.jpg");
-      width: 100%;
-      .title {
-        h1 {
-          background: rgba(0, 0, 0, 0.3);
-
-          font-weight: 900;
-          line-height: normal;
-          font-family: "Roboto Condensed";
-          font-size: 40px;
-          color: #ffffff;
-          position: absolute;
-          top: 30%;
-          right: 20%;
-        }
-        .btn {
-          color: #ffffff;
-          position: absolute;
-          background: rgba(0, 0, 0, 0.3);
-          top: 55%;
-          left: 35%;
-          line-height: normal;
-          font-weight: 600;
-          padding: 12px 30px;
-          border: 1px solid white;
-          border-radius: 0px;
-        }
-      }
-    }
-    .header {
-      background: rgba(0, 0, 0, 0.3);
-
-      position: absolute;
-      top: 5%;
-      left: 0;
-      .logo {
-        h2 {
-          padding: 22px 24px;
-          margin: 0;
-          border: 1px solid white;
-        }
-        img {
-          padding: 32px 25px;
-        }
-      }
-      .topMenu {
-        /* background-color: rgba(255, 255, 255, 0.2); */
-        ul {
-          li {
-            padding: 29px 24px;
-          }
-          .active {
-            background-color: #350f12;
-          }
+        li:hover {
+          border-radius: 10px;
+          padding: 10px;
+          transition: 0.6s;
+          background-color: rgba(0, 0, 0, 0.3);
         }
       }
     }
   }
 `;
-
 export default HeaderWrapper;

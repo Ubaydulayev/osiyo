@@ -1,29 +1,31 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import Container from "../../containers/Container";
 import HomeWrapper from "./HomeWrapper";
+import { BURGER, X } from "../../assets/icon_path";
 
 const Home = () => {
   const [bars, setbars] = useState(false);
   const toggle = () => setbars(!bars);
+  const burgerRef = useRef();
+  const menu = () => {
+    burgerRef.current.classList.toggle("left");
+  };
 
   return (
     <Container>
       <HomeWrapper>
         <section className="homeSection">
-          <div className="container p-0 header d-flex align-items-center justify-content-between">
-            <div className="logo">
-              <Link to={"/"}>
-                <h2>ASIA Granite Uzbekistan</h2>
-              </Link>
-            </div>
-
-            <div className="topMenu">
-              <div className="menus">
-                <ul className="d-lg-flex d-md-none d-none">
-                  <li className="active">
+          <div className="headers">
+            <div className="container">
+              <header className="desctop">
+                <div className="logo">
+                  <Link to={"/"}>
+                    <h2>ASIA Granite Uzbekistan</h2>
+                  </Link>
+                </div>
+                <ul>
+                  <li>
                     <Link to={"/"}>HOME</Link>
                   </li>
                   <li>
@@ -38,17 +40,21 @@ const Home = () => {
                   <li>
                     <Link to={"/contact"}>CONTACT</Link>
                   </li>
-                  <li>
-                    <Link to={"/login"}>LOG IN</Link>
-                  </li>
                 </ul>
+                <div className="box burger" onClick={menu}>
+                  <img src={BURGER} alt="open" />
+                </div>
+              </header>
+            </div>
+            <header className="mobile left" ref={burgerRef} onClick={menu}>
+              <div className="logo">
+                <Link to={"/"}>
+                  <h3>ASIA Granite Uzbekistan</h3>
+                </Link>
+                <img src={X} alt="close" />
               </div>
-              <div className="bars d-lg-none d-md-block d-block">
-                <button className="btn text-white me-3" onClick={toggle}>
-                  <FontAwesomeIcon icon={faBars} />
-                </button>
-                <ul className={bars ? "h-100" : "d-none"}>
-                  <li className="active">
+                <ul>
+                  <li>
                     <Link to={"/"}>HOME</Link>
                   </li>
                   <li>
@@ -63,12 +69,8 @@ const Home = () => {
                   <li>
                     <Link to={"/contact"}>CONTACT</Link>
                   </li>
-                  <li>
-                    <Link to={"/login"}>LOG IN</Link>
-                  </li>
                 </ul>
-              </div>
-            </div>
+            </header>
           </div>
           <div className="content">
             <div className="title">
@@ -585,7 +587,11 @@ const Home = () => {
           </div>
           <div className="content9">
             <h2>Osiyo granit Here</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.9497203015435!2d65.98886631538485!3d40.05422297940892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda45bfc2ad1c1452!2zNDDCsDAzJzE1LjIiTiA2NcKwNTknMjcuOCJF!5e0!3m2!1sru!2s!4v1673845739373!5m2!1sru!2s" loading="lazy" class="w-100 karta" />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.9497203015435!2d65.98886631538485!3d40.05422297940892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda45bfc2ad1c1452!2zNDDCsDAzJzE1LjIiTiA2NcKwNTknMjcuOCJF!5e0!3m2!1sru!2s!4v1673845739373!5m2!1sru!2s"
+              loading="lazy"
+              class="w-100 karta"
+            />
           </div>
         </section>
       </HomeWrapper>
